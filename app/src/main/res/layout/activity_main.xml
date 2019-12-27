@@ -8,6 +8,7 @@
 
 
     <LinearLayout
+
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -26,7 +27,7 @@
                 android:id="@+id/tab1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tab 1" />
+                android:text="tab 1" />
 
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tab2"
@@ -69,14 +70,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="64dp"-->
-<!--                    android:gravity="center"/>-->
-                <ListView
+<!--                <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+<!--                <uses-permission android:name="android.permission.READ_CONTACTS" />-->
+                <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/text1"/>
+                    android:fillViewport="true">
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/text1"
+                        android:drawSelectorOnTop="false"/>
+
+                        </ScrollView>
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>

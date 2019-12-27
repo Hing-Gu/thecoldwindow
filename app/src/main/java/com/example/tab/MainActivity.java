@@ -2,14 +2,13 @@ package com.example.tab;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.database.Cursor;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.app.Activity;
-import android.app.ListActivity;
-import android.widget.SimpleAdapter;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -37,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
 
     private void changeView(int index) {
         TextView testView1 = (TextView) findViewById(R.id.text3);
