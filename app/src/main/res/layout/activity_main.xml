@@ -51,14 +51,30 @@
                 android:id="@+id/text1"
                 android:text="TEXT 1" />
 
-            <TextView
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#FF9800"-->
+<!--                android:gravity="center"-->
+<!--                android:visibility="invisible"-->
+<!--                android:id="@+id/text2"-->
+<!--                android:text="TEXT 2" />-->
+<!--            <ScrollView-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:id="@+id/mygalleryid"-->
+<!--                android:background="#FF0000"-->
+<!--                android:visibility="invisible"-->
+<!--                android:clickable="true"-->
+<!--                -->
+<!--                />-->
+            <GridView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#FF9800"
-                android:gravity="center"
-                android:visibility="invisible"
-                android:id="@+id/text2"
-                android:text="TEXT 2" />
+                android:layout_height="wrap_content"
+                android:id="@+id/mygalleryid"
+                android:weightSum="4"
+                ></GridView>
 
             <TextView
                 android:layout_width="match_parent"

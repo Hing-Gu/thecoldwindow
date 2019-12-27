@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.GridView;
 import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
+import com.example.tab.MygalleryKt;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -36,26 +38,31 @@ public class MainActivity extends AppCompatActivity {
 
     private void changeView(int index) {
         TextView testView1 = (TextView) findViewById(R.id.text1);
-        TextView testView2 = (TextView) findViewById(R.id.text2);
+//        TextView testView2 = (TextView) findViewById(R.id.text2);
+        GridView mygallery = (GridView) findViewById(R.id.mygalleryid);
         TextView testView3 = (TextView) findViewById(R.id.text3);
 
         switch (index) {
                 case 0:
                     testView1.setVisibility(View.VISIBLE);
-                    testView2.setVisibility(View.INVISIBLE);
+                    mygallery.setVisibility(View.INVISIBLE);
                     testView3.setVisibility(View.INVISIBLE);
                     break;
                 case 1:
                     testView1.setVisibility(View.INVISIBLE);
-                    testView2.setVisibility(View.VISIBLE);
+                    mygallery.setVisibility(View.VISIBLE);
                     testView3.setVisibility(View.INVISIBLE);
                     break;
                 case 2:
                     testView1.setVisibility(View.INVISIBLE);
-                testView2.setVisibility(View.INVISIBLE);
-                testView3.setVisibility(View.VISIBLE);
+                    mygallery.setVisibility(View.INVISIBLE);
+                    testView3.setVisibility(View.VISIBLE);
                 break;
         }
+    }
+
+    private void showGallery(){
+        
     }
 }
 
