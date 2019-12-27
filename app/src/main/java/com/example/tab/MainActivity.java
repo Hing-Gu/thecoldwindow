@@ -5,7 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.app.Activity;
+import android.app.ListActivity;
+import android.widget.SimpleAdapter;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -35,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void changeView(int index) {
-        TextView testView1 = (TextView) findViewById(R.id.text1);
+        TextView testView1 = (TextView) findViewById(R.id.text3);
         TextView testView2 = (TextView) findViewById(R.id.text2);
-        TextView testView3 = (TextView) findViewById(R.id.text3);
+        ListView testView3 = (ListView) findViewById(R.id.text1);
 
         switch (index) {
-                case 0:
+                case 2:
                     testView1.setVisibility(View.VISIBLE);
                     testView2.setVisibility(View.INVISIBLE);
                     testView3.setVisibility(View.INVISIBLE);
@@ -50,10 +54,10 @@ public class MainActivity extends AppCompatActivity {
                     testView2.setVisibility(View.VISIBLE);
                     testView3.setVisibility(View.INVISIBLE);
                     break;
-                case 2:
+                case 0:
                     testView1.setVisibility(View.INVISIBLE);
-                testView2.setVisibility(View.INVISIBLE);
-                testView3.setVisibility(View.VISIBLE);
+                    testView2.setVisibility(View.INVISIBLE);
+                    testView3.setVisibility(View.VISIBLE);
                 break;
         }
     }
