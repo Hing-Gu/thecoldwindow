@@ -51,6 +51,9 @@
                 android:id="@+id/text1"
                 android:text="TEXT 1" />
 
+
+
+            
             
             <TextView
                 android:layout_width="match_parent"
